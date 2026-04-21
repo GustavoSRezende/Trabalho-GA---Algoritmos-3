@@ -7,7 +7,7 @@ using namespace std;
 // Classe principal da Árvore B
 class ArvoreB {
 public:
-    NodoArvoreB* raiz;
+	NodoArvoreB* raiz; //endereco de memoria que guarda um objeto da classe NodoArvoreB, que representa a pagina raiz da arvore
     int ordem;
 
     ArvoreB(int ordemDaArvore);

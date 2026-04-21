@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArvoreB.cpp" />
     <ClCompile Include="TrabalhoGA - Algoritmos 3.cpp" />
   </ItemGroup>
   <ItemGroup>

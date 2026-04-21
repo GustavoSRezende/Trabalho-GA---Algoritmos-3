@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\",
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\NodoArvoreB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|solutionrelative:TrabalhoGA - Algoritmos 3\\NodoArvoreB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|solutionrelative:TrabalhoGA - Algoritmos 3\\ArvoreB.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|solutionrelative:TrabalhoGA - Algoritmos 3\\ArvoreB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|solutionrelative:TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\NodoArvoreB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95EB0F20-1D94-4CC8-84D2-9F0931F90C9B}|TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.vcxproj|solutionrelative:TrabalhoGA - Algoritmos 3\\NodoArvoreB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ArvoreB.cpp",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.cpp",
+              "RelativeDocumentMoniker": "TrabalhoGA - Algoritmos 3\\ArvoreB.cpp",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.cpp",
+              "RelativeToolTip": "TrabalhoGA - Algoritmos 3\\ArvoreB.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-21T22:08:24.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "NodoArvoreB.h",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\NodoArvoreB.h",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\NodoArvoreB.h",
               "RelativeDocumentMoniker": "TrabalhoGA - Algoritmos 3\\NodoArvoreB.h",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\NodoArvoreB.h",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\NodoArvoreB.h",
               "RelativeToolTip": "TrabalhoGA - Algoritmos 3\\NodoArvoreB.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-15T16:19:28.283Z",
               "EditorCaption": ""
@@ -41,11 +58,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ArvoreB.h",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.h",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.h",
               "RelativeDocumentMoniker": "TrabalhoGA - Algoritmos 3\\ArvoreB.h",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.h",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\ArvoreB.h",
               "RelativeToolTip": "TrabalhoGA - Algoritmos 3\\ArvoreB.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-15T16:14:58.16Z",
               "EditorCaption": ""
@@ -54,9 +71,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TrabalhoGA - Algoritmos 3.cpp",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp",
               "RelativeDocumentMoniker": "TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\Trabalho GA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp",
               "RelativeToolTip": "TrabalhoGA - Algoritmos 3\\TrabalhoGA - Algoritmos 3.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
