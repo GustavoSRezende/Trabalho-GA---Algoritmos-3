@@ -68,7 +68,40 @@ void ArvoreB::inserir(int novaChave) {
         raiz = new NodoArvoreB(ordem, true);
         raiz->chaves[0] = novaChave;
         raiz->qtdChavesAtuais = 1; 
-    }
+    } else {
+     //a árvore já tem uma raiz. Precisamos checar se ela está cheia.
+     //o limite máximo de chaves em um nodo é 2 * m
+     if (raiz->qtdChavesAtuais == 2 * ordem) {
+
+         //se entrar aqui, a raiz está cheia e a arvore precisa crescer em altura
+         // Criamos uma nova raiz (ela começa vazia e NÃO é folha, pois terá a raiz antiga como filha)
+         NodoArvoreB* novaRaiz = new NodoArvoreB(ordem, false);
+
+         // Faz a nova raiz apontar para a raiz antiga no seu primeiro ponteiro de filho
+         novaRaiz->filhos[0] = raiz;
+
+         // Chama a função de dividir (split) para quebrar a raiz antiga no meio e subir uma chave
+         novaRaiz->dividirFilhoCheio(0, raiz);
+
+         // Agora que a nova raiz tem 1 chave e 2 filhos, precisamos decidir para qual
+         // dos dois filhos a novaChave deve ir.
+         int i = 0;
+         if (novaRaiz->chaves[0] < novaChave) {
+             i++;
+         }
+
+         // Manda o filho escolhido inserir a chave
+         novaRaiz->filhos[i]->inserirNoNodoNaoCheio(novaChave);
+
+         // Atualiza o ponteiro oficial da árvore para esta nova página topo
+         raiz = novaRaiz;
+     }
+     else {
+         // Cenário 3: A raiz ainda tem espaço sobrando.
+         // Apenas repassamos a ordem para a raiz fazer o trabalho padrão.
+         raiz->inserirNoNodoNaoCheio(novaChave);
+     }
+     }
 }
 
 void ArvoreB::remover(int chaveParaRemover) {
