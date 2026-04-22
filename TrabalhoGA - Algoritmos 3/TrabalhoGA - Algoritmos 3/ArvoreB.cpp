@@ -63,6 +63,12 @@ void ArvoreB::gerarArquivoDot(string nomeArquivo) { //pro graphviz imprimir
 //Funções de inserção e remoção da Árvore B, que vão chamar as funções de inserção e remoção do nodo raiz, que vão chamar recursivamente nos filhos, e assim por diante. A função de inserção tem que verificar se a raiz está cheia antes de inserir, se estiver cheia tem que dividir a raiz e criar uma nova raiz. A função de remoção tem que verificar se a raiz está vazia depois de remover, se estiver vazia tem que deletar a raiz e setar a raiz como nullptr.
 
 void ArvoreB::inserir(int novaChave) { 
+	//primeiro, caso a raiz esteja vazia, tem que criar um novo nodo e colocar a nova chave nele, e setar a raiz como esse novo nodo
+    if (raiz == nullptr) {
+        raiz = new NodoArvoreB(ordem, true);
+        raiz->chaves[0] = novaChave;
+        raiz->qtdChavesAtuais = 1; 
+    }
 }
 
 void ArvoreB::remover(int chaveParaRemover) {
