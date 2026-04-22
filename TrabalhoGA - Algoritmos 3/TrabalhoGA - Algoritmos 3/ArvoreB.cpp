@@ -83,21 +83,16 @@ void ArvoreB::inserir(int novaChave) {
          // Chama a função de dividir (split) para quebrar a raiz antiga no meio e subir uma chave
          novaRaiz->dividirFilhoCheio(0, raiz);
 
-         // Agora que a nova raiz tem 1 chave e 2 filhos, precisamos decidir para qual
-         // dos dois filhos a novaChave deve ir.
-         int i = 0;
-         if (novaRaiz->chaves[0] < novaChave) {
+         int i = 0;  // Agora que a nova raiz tem 1 chave e 2 filhos, precisamos decidir para qual
+         if (novaRaiz->chaves[0] < novaChave) {     // dos dois filhos a novaChave deve ir.
              i++;
          }
 
-         // Manda o filho escolhido inserir a chave
-         novaRaiz->filhos[i]->inserirNoNodoNaoCheio(novaChave);
-
-         // Atualiza o ponteiro oficial da árvore para esta nova página topo
-         raiz = novaRaiz;
+         novaRaiz->filhos[i]->inserirNoNodoNaoCheio(novaChave); // Manda o filho escolhido inserir a chave
+         raiz = novaRaiz; // Atualiza o ponteiro oficial da árvore para esta nova página topo
      }
      else {
-         // Cenário 3: A raiz ainda tem espaço sobrando.
+         // nesse caso a raiz ainda tem espaço sobrando.
          // Apenas repassamos a ordem para a raiz fazer o trabalho padrão.
          raiz->inserirNoNodoNaoCheio(novaChave);
      }
@@ -105,4 +100,22 @@ void ArvoreB::inserir(int novaChave) {
 }
 
 void ArvoreB::remover(int chaveParaRemover) {
+
+    if (raiz == nullptr) { //verifica se tem algo pra remover
+        cout << "A árvore está vazia!" << endl;
+        return;
+    }
+        raiz->remover(chaveParaRemover); //chama a função de remoção do nodo raiz, que vai chamar recursivamente nos filhos
+
+        if (raiz->qtdChavesAtuais == 0) {
+            NodoArvoreB* raizAntiga = raiz;
+
+            if (raiz->isFolha == true) { //se a raiz for folha, ou seja, não tem filhos, a árvore fica vazia depois de remover a chave, então é só deletar a raiz e setar como nullptr
+                raiz = nullptr;
+            }
+            else { //se ela não for folha, vira a nova raiz 
+                raiz = raiz->filhos[0];
+            }
+			delete raizAntiga; //libera a memória da raiz antiga, que já foi removida da árvore
+        }
 }
