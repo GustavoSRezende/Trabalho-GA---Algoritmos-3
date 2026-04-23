@@ -105,17 +105,17 @@ void ArvoreB::remover(int chaveParaRemover) {
         cout << "A árvore está vazia!" << endl;
         return;
     }
-        raiz->remover(chaveParaRemover); //chama a função de remoção do nodo raiz, que vai chamar recursivamente nos filhos
+    raiz->remover(chaveParaRemover); //chama a função de remoção do nodo raiz, que vai chamar recursivamente nos filhos
 
-        if (raiz->qtdChavesAtuais == 0) {
-            NodoArvoreB* raizAntiga = raiz;
+    if (raiz->qtdChavesAtuais == 0) {
+        NodoArvoreB* raizAntiga = raiz;
 
-            if (raiz->isFolha == true) { //se a raiz for folha, ou seja, não tem filhos, a árvore fica vazia depois de remover a chave, então é só deletar a raiz e setar como nullptr
-                raiz = nullptr;
-            }
-            else { //se ela não for folha, vira a nova raiz 
-                raiz = raiz->filhos[0];
-            }
-			delete raizAntiga; //libera a memória da raiz antiga, que já foi removida da árvore
+        if (raiz->isFolha == true) { //se a raiz for folha, ou seja, não tem filhos, a árvore fica vazia depois de remover a chave, então é só deletar a raiz e setar como nullptr
+            raiz = nullptr;
         }
+        else { //se ela não for folha, vira a nova raiz 
+            raiz = raiz->filhos[0];
+        }
+        delete raizAntiga; //libera a memória da raiz antiga, que já foi removida da árvore
+    }
 }
