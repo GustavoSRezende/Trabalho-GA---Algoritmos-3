@@ -27,3 +27,42 @@ NodoArvoreB* NodoArvoreB::buscar(int chaveDesejada) {
 
 	return filhos[i]->buscar(chaveDesejada); // Continua a busca no filho apropriado
 }
+
+void NodoArvoreB::imprimirEmOrdem() {
+	int i;
+	for (i = 0; i < qtdChavesAtuais; i++) {
+		if (isFolha == false) {
+			filhos[i]->imprimirEmOrdem();
+		}
+		cout << chaves[i] << " ";
+	}
+	// Imprime o último filho à direita
+	if (isFolha == false) {
+		filhos[i]->imprimirEmOrdem();
+	}
+}
+
+void NodoArvoreB::imprimirPreOrdem() {
+	for (int i = 0; i < qtdChavesAtuais; i++) {
+		cout << chaves[i] << " ";
+	}
+	cout << endl;
+
+	if (isFolha == false) {
+		for (int i = 0; i <= qtdChavesAtuais; i++) {
+			filhos[i]->imprimirPreOrdem();
+		}
+	}
+}
+
+void NodoArvoreB::imprimirPosOrdem() {
+	if (isFolha == false) {
+		for (int i = 0; i <= qtdChavesAtuais; i++) {
+			filhos[i]->imprimirPosOrdem();
+		}
+	}
+	for (int i = 0; i < qtdChavesAtuais; i++) {
+		cout << chaves[i] << " ";
+	}
+	cout << endl;
+}
