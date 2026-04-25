@@ -72,29 +72,27 @@ void ArvoreB::inserir(int novaChave) {
      //a árvore já tem uma raiz. Precisamos checar se ela está cheia.
      //o limite máximo de chaves em um nodo é 2 * m
      if (raiz->qtdChavesAtuais == 2 * ordem) {
-
          //se entrar aqui, a raiz está cheia e a arvore precisa crescer em altura
-         // Criamos uma nova raiz (ela começa vazia e NÃO é folha, pois terá a raiz antiga como filha)
+         //cria uma nova raiz (ela começa vazia e NÃO é folha, pois terá a raiz antiga como filha)
          NodoArvoreB* novaRaiz = new NodoArvoreB(ordem, false);
 
-         // Faz a nova raiz apontar para a raiz antiga no seu primeiro ponteiro de filho
+         //faz a nova raiz apontar para a raiz antiga no seu primeiro ponteiro de filho
          novaRaiz->filhos[0] = raiz;
 
-         // Chama a função de dividir (split) para quebrar a raiz antiga no meio e subir uma chave
+         //chama a função de dividir (split) para quebrar a raiz antiga no meio e subir uma chave
          novaRaiz->dividirFilhoCheio(0, raiz);
 
-         int i = 0;  // Agora que a nova raiz tem 1 chave e 2 filhos, precisamos decidir para qual
-         if (novaRaiz->chaves[0] < novaChave) {     // dos dois filhos a novaChave deve ir.
+         int i = 0;  //agora que a nova raiz tem 1 chave e 2 filhos, precisamos decidir para qual
+         if (novaRaiz->chaves[0] < novaChave) {     //dos dois filhos a novaChave deve ir.
              i++;
          }
 
-         novaRaiz->filhos[i]->inserirNoNodoNaoCheio(novaChave); // Manda o filho escolhido inserir a chave
-         raiz = novaRaiz; // Atualiza o ponteiro oficial da árvore para esta nova página topo
+         novaRaiz->filhos[i]->inserirNoNodoNaoCheio(novaChave); //manda o filho escolhido inserir a chave
+         raiz = novaRaiz; //atualiza o ponteiro oficial da árvore para esta nova página topo
      }
      else {
-         // nesse caso a raiz ainda tem espaço sobrando.
-         // Apenas repassamos a ordem para a raiz fazer o trabalho padrão.
-         raiz->inserirNoNodoNaoCheio(novaChave);
+         raiz->inserirNoNodoNaoCheio(novaChave);   //nesse caso a raiz ainda tem espaço sobrando.
+                                                   //apenas repassamos a ordem para a raiz fazer o trabalho padrão.
      }
      }
 }

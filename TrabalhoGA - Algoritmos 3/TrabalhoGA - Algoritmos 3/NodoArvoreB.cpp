@@ -66,3 +66,24 @@ void NodoArvoreB::imprimirPosOrdem() {
 	}
 	cout << endl;
 }
+void NodoArvoreB::gerarDotPreOrdem(ofstream& arquivoDot) {
+	//desenha a caixa deste nodo
+	arquivoDot << "  node" << this << " [label=\"";
+	for (int i = 0; i < qtdChavesAtuais; i++) {
+		arquivoDot << "<f" << i << "> " << chaves[i];
+		if (i < qtdChavesAtuais - 1) {
+			arquivoDot << " | ";
+		}
+	}
+	arquivoDot << "\"];" << endl;
+
+	//desenha as setas e manda os filhos se desenharem
+	if (isFolha == false) {
+		for (int i = 0; i <= qtdChavesAtuais; i++) {
+			if (filhos[i] != nullptr) {
+				arquivoDot << "  node" << this << " -> node" << filhos[i] << ";" << endl;
+				filhos[i]->gerarDotPreOrdem(arquivoDot);
+			}
+		}
+	}
+}
